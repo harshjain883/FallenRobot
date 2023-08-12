@@ -389,10 +389,15 @@ async def quott_(event):
     return message
 
 
-__mod_name__ = "𝐐ᴜᴏᴛʟʏ"
-
 __help__ = """
-
-❍ /q → ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ 
-❍ /q r → ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ʀᴇᴘʟʏ
+❍ /q*:* ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ 
+❍ /qr*:* ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ʀᴇᴘʟʏ
 """
+
+__mod_name__ = "ǫᴜᴏᴛʟʏ"
+
+Q_HANDLER = DisableAbleCommandHandler("q", q, run_async=True)
+QR_HANDLER = DisableAbleCommandHandler("qr", qr, run_async=True)
+
+dispatcher.add_handler(Q_HANDLER)
+dispatcher.add_handler(QR_HANDLER)
