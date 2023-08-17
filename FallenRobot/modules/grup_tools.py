@@ -10,12 +10,12 @@ from pyrogram.errors import ChatAdminRequired, MessageTooLong, RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardButton, InlineKeyboardMarkup
 
 from database.users_chats_db import db
-from misskaty import BOT_USERNAME, app
-from misskaty.core.decorator import asyncify, capture_err
-from misskaty.core.decorator.ratelimiter import ratelimiter
-from misskaty.helper.http import http
-from misskaty.helper.localization import use_chat_lang
-from misskaty.vars import COMMAND_HANDLER, SUDO, SUPPORT_CHAT
+from FallenRobot import BOT_USERNAME, app
+from FallenRobot.core.decorator import asyncify, capture_err
+from FallenRobot.core.decorator.ratelimiter import ratelimiter
+from FallenRobot.helper.http import http
+from FallenRobot.helper.localization import use_chat_lang
+from FallenRobot.vars import COMMAND_HANDLER, SUDO, SUPPORT_CHAT
 from utils import temp
 
 LOGGER = getLogger(__name__)
