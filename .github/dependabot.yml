@@ -12,5 +12,5 @@ updates:
   ignore:
     - dependency-name: "python-telegram-bot"
     # Ignoring all ptb updates
-    - dependency-name: "sqlalchemy
+    - dependency-name: "sqlalchemy"
     # Ignoring all sqlalchemy updates
